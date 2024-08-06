@@ -1,0 +1,8 @@
+const { SerialPort, ReadlineParser } = require('serialport')
+const port = new SerialPort({ path: '/dev/cu.usbmodem11201', baudRate: 115200 })
+const parser = new ReadlineParser()
+port.pipe(parser)
+parser.on('data', (data) => {
+    console.log('data:', data)
+})
+
