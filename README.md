@@ -23,6 +23,7 @@ Serial connection + parsing: `serialport` on NPM
 
 The rest of the stack is quite simple [Frontend -> Backend]:
 ```
+ChartJS
 EJS
 
 SocketIO
@@ -34,4 +35,4 @@ ArduinoJson.h
 ```
 
 ## Notes:
-Ignroe the backups directory - this was used before we had a working Git solution
+Ignore the backups directory - this was used before we had a working Git solution
